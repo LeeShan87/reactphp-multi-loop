@@ -7,13 +7,10 @@ use React\EventLoop\Factory;
 
 class MultiLoopTest extends \PHPUnit\Framework\TestCase
 {
-    public function _setUp(): void
-    {
-        MultiLoop::flushLoops();
-    }
 
     public function testTick()
     {
+        MultiLoop::flushLoops();
         $this->assertEmpty(MultiLoop::getLoops());
         $loop1 = Factory::create();
         $loop1->futureTick($this->expectCallableOnce());
@@ -25,6 +22,7 @@ class MultiLoopTest extends \PHPUnit\Framework\TestCase
 
     public function testLoopManagement()
     {
+        MultiLoop::flushLoops();
         $this->assertEmpty(MultiLoop::getLoops());
         $loop1 = Factory::create();
         $loop1->futureTick($this->expectCallableOnce());
@@ -50,6 +48,7 @@ class MultiLoopTest extends \PHPUnit\Framework\TestCase
 
     public function testWaitForSeconds()
     {
+        MultiLoop::flushLoops();
         $this->assertEmpty(MultiLoop::getLoops());
         $loop1 = Factory::create();
         $loop1->addTimer(1, $this->expectCallableOnce());
