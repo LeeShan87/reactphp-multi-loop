@@ -119,7 +119,7 @@ class MultiLoopTest extends \PHPUnit\Framework\TestCase
     protected function createCallableMock()
     {
         return $this
-            ->getMockBuilder(CallableStub::class)
+            ->getMockBuilder('LeeShan87\\Tests\\React\\MultiLoop\\CallableStub')
             ->getMock();
     }
 }
