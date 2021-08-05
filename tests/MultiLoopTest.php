@@ -102,7 +102,7 @@ class MultiLoopTest extends \PHPUnit\Framework\TestCase
         return $mock;
     }
 
-    protected function expectCallableConsecutive($numberOfCalls, array $with)
+    protected function expectCallableConsecutive($numberOfCalls, $with)
     {
         $mock = $this->createCallableMock();
 

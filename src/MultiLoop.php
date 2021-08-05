@@ -18,7 +18,7 @@ class MultiLoop
      * @param string $name
      * @return void
      */
-    public static function addLoop(LoopInterface $loop, string $name)
+    public static function addLoop($loop,  $name)
     {
         self::$loops[$name] = $loop;
     }
@@ -29,7 +29,7 @@ class MultiLoop
      * @param string $name
      * @return void
      */
-    public static function removeLoop(string $name)
+    public static function removeLoop($name)
     {
         unset(self::$loops[$name]);
     }
@@ -58,7 +58,7 @@ class MultiLoop
      * @var LoopInterface $loop
      * @return void
      */
-    public static function loopTick(LoopInterface $loop)
+    public static function loopTick($loop)
     {
         $loop->futureTick(function () use ($loop) {
             $loop->stop();
