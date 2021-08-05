@@ -1,0 +1,26 @@
+{
+    "name": "leeshan87/reactphp-multi-loop",
+    "description": "",
+    "keywords": ["ReactPHP", "async", "test", "multiLoop"],
+    "homepage": "https://github.com/leeshan87/reactphp-multi-loop",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zoltán Toma",
+            "email": "leeshan87@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4" : { "LeeShan87\\React\\MultiLoop\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "LeeShan87\\Tests\\React\\MultiLoop\\": "tests/" }
+    },
+    "require": {
+        "php": ">=5.3",
+        "react/event-loop": "~1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35"
+    }
+}
