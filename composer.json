@@ -17,7 +17,7 @@
         "psr-4": { "LeeShan87\\Tests\\React\\MultiLoop\\": "tests/" }
     },
     "require": {
-        "php": ">=5.3",
+        "php": ">=5.5",
         "react/event-loop": "~1.0"
     },
     "require-dev": {
