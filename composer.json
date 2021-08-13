@@ -1,7 +1,7 @@
 {
     "name": "leeshan87/reactphp-multi-loop",
-    "description": "",
-    "keywords": ["ReactPHP", "async", "test", "multiLoop"],
+    "description": "Manage multiple LoopInterfaces easily when writing tests.",
+    "keywords": ["ReactPHP", "async", "testing", "multiLoop"],
     "homepage": "https://github.com/leeshan87/reactphp-multi-loop",
     "license": "MIT",
     "authors": [
