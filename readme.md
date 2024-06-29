@@ -36,7 +36,7 @@ See also the [CHANGELOG](CHANGELOG.md) for details about version upgrades.
 
 This project aims to run on any platform and thus does not require any PHP
 extensions and supports running on legacy PHP 5.3 through current PHP 8+.
-It's *highly recommended to use PHP 7+* for this project.
+It's _highly recommended to use PHP 7+_ for this project.
 
 ## Tests
 
@@ -56,8 +56,3 @@ $ php vendor/bin/phpunit
 ## License
 
 MIT
-
-## Support
-
-<p>If you like my work, don’t forget to <a href="https://www.buymeacoffee.com/leeshan87" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-</p>
